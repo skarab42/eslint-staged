@@ -3,6 +3,9 @@
   "include": ["./source", "./test"],
   "compilerOptions": {
     "noEmit": true,
-    "sourceMap": false
+    "sourceMap": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "verbatimModuleSyntax": false
   }
 }

@@ -1,3 +1,16 @@
-import { log } from 'node:console';
+/* eslint-disable unicorn/prefer-top-level-await */
+/* eslint-disable no-console */
+import { ESLintStaged } from '../index.js';
 
-log('run: @skarab/eslint-staged');
+ESLintStaged(process.argv.slice(2))
+  .then((error) => {
+    if (error) {
+      console.error(error);
+      process.exitCode = 1;
+    }
+    return error;
+  })
+  .catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });

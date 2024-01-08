@@ -14,6 +14,9 @@ devDependencies:
   '@skarab/typescript-config':
     specifier: ^3.1.0
     version: 3.1.0(typescript@5.3.3)
+  '@types/eslint':
+    specifier: ^8.56.1
+    version: 8.56.1
   '@types/node':
     specifier: ^20.10.6
     version: 20.10.6
@@ -23,6 +26,9 @@ devDependencies:
   eslint:
     specifier: ^8.56.0
     version: 8.56.0
+  execa:
+    specifier: ^8.0.1
+    version: 8.0.1
   lint-staged:
     specifier: ^15.2.0
     version: 15.2.0
@@ -835,6 +841,13 @@ packages:
       typescript: ^5
     dependencies:
       typescript: 5.3.3
+    dev: true
+
+  /@types/eslint@8.56.1:
+    resolution: {integrity: sha512-18PLWRzhy9glDQp3+wOgfLYRWlhgX0azxgJ63rdpoUHyrC9z0f5CkFburjQx4uD7ZCruw85ZtMt6K+L+R8fLJQ==}
+    dependencies:
+      '@types/estree': 1.0.5
+      '@types/json-schema': 7.0.15
     dev: true
 
   /@types/estree@1.0.5:
