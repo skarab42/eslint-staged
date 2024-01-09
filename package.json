@@ -1,6 +1,6 @@
 {
   "name": "@skarab/eslint-staged",
-  "description": "My skaffolded project",
+  "description": "Refines lint-staged functionality, enforcing adherence to ESLint's ignored file configurations.",
   "version": "0.0.0-development",
   "license": "MIT",
   "author": {

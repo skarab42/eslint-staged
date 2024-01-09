@@ -1,6 +1,8 @@
 # @skarab/eslint-staged
 
-This package provides a CLI tool (`eslint-staged`) designed to run ESLint on specific files, considering the files in `.eslintignore`.
+Refines [lint-staged] functionality, enforcing strict adherence to ESLint's ignored file configurations.
+
+This package provides a CLI tool (`eslint-staged`) designed to run ESLint on staged files, considering the files in `.eslintignore` and `ignorePatterns`.
 
 It resolves the [common issue] ([1], [2]) where [lint-staged] pass files ignored by ESLint.
 
